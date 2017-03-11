@@ -10,7 +10,7 @@ import org.junit.runner.RunWith
 class TripDAOTest: WordSpec() {
     init {
         "findTripsByUser" should {
-            "throw throw exception" {
+            "throw exception" {
                 shouldThrow<CollaboratorCallException> {
                     TripDAO().findTripsByUser(User())
                 }
